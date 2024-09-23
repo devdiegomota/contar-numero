@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(34, 34, 170);
+    background-color: rgb(50, 22, 2);
     font: normal 15pt arial;
     padding: 0px 20px;
     height: 92vh;
@@ -26,19 +26,16 @@ div {
 footer {
     color: white;
     text-align: center;
-    font-style: italic;
-}
-img {
-    width: 60%;
-    margin-top: 30px;
-    
-}
-#verificar {
-    border-radius: 10px;
-    font-size: 17px;
-    padding: 5px;
-
+    font-style: italic;   
 }
 #res {
     margin-bottom: 20px;
+}
+#botao {
+    padding: 7px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+h1 {
+    font-size: 30px;
 }

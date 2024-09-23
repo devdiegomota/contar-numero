@@ -5,31 +5,33 @@ function contar() {
     let resultado = document.getElementById('res')
 
     if (inicio.value <= 0 || fim.value <= 0) {
-        resultado.innerHTML = 'ERRO! Faltam dados!'
+        resultado.innerHTML = 'Faltam dados!'
+
     } else {
         resultado.innerHTML = 'Contando...  '
         let i = Number(inicio.value)
         let f = Number(fim.value)
         let p = Number(passo.value)
+
         if (p <= 0) {
             resultado.innerHTML = 'Insira um número no Passo'
         }
+
         else if (i < f) {
             //contagem crescente
-            resultado.innerHTML = 'Crescente... <br>'
+            resultado.innerHTML = 'Crescente... <br><br>'
             for(let c = i; c <= f;c += p) {
-                resultado.innerHTML += `\u{1F449} ${c}`
+                resultado.innerHTML += `\u{1F449} ${c}`       
         }     
         
-
         } else {
             //contagem decrescente
-            resultado.innerHTML = 'Decrescente... <br>'
+            resultado.innerHTML = 'Decrescente... <br><br>'
             for(let c = i; c >= f;c -= p) {
                 resultado.innerHTML += `\u{1F449} ${c}`
         }
 
         }
-       
+        resultado.innerHTML += '<br><br>Fim da contagem!'
    }
 }
